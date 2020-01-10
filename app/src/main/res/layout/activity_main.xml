@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEB3B"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/imgFondo"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="@drawable/asistente" />
+
+        <TextView
+            android:id="@+id/txtBienvenida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#FFEB3B"
+            android:gravity="center"
+            android:text="Bienvenidos"
+            android:textColor="#FFFFFF"
+            android:textSize="50sp"
+            app:fontFamily="sans-serif-black" />
+
+        <TextView
+            android:id="@+id/txtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFEB3B"
+            android:gravity="center"
+            android:text="Ana Laura Sanchez Cruz"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            app:fontFamily="sans-serif-black" />
+
+        <TextView
+            android:id="@+id/txtGrupo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFEB3B"
+            android:gravity="center"
+            android:text="GDS0141"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            app:fontFamily="sans-serif-black" />
+
+        <TextView
+            android:id="@+id/txtRecuperacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFEB3B"
+            android:gravity="center"
+            android:text="Recuperacion 2"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            app:fontFamily="sans-serif-black" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".RecetasOpciones"
+    tools:showIn="@layout/activity_recetas_opciones">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif-black"
+            android:paddingBottom="25dp"
+            android:text='"Mantener un estilo de vida saludable reducirá
+            tus posibilidades de contraer una enfermedad coronaria y
+            cardiovascular, nivelará tus niveles de azúcar y colesterol
+             en la sangre, y además disminuye la aparición de enfermedades
+              crónicas y degenerativas como el sida, cáncer, alzheimer, etc."'
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/imgPlatoSaludable"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/saludable" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/btnDesayuno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desayuno" />
+
+            <Button
+                android:id="@+id/btnComida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comida" />
+
+            <Button
+                android:id="@+id/btnCena"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cena" />
+        </LinearLayout>
+
+        <include layout="@layout/btn_volver" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
